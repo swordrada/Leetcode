@@ -1,5 +1,5 @@
 # class TreeNode:
-#     def __init__(self, x_:
+#     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
@@ -12,7 +12,8 @@ class Solution:
         :type inorder: List[int]
         :rtype: TreeNode
         """
-        if not preorderr
+        if not preorder:
+            return None
         sep = 0
         root = TreeNode(preorder[0])
         for i in range(len(inorder)):
