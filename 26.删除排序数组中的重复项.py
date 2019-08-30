@@ -55,6 +55,7 @@
 #
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        # put difference number into "num" location.
         num = 0
         for i in range(1, len(nums)):
             if nums[i] != nums[i-1]:
